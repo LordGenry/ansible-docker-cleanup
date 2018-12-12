@@ -1,0 +1,5 @@
+---
+- name: Remove unused docker images
+  shell: docker image prune -f -a --filter "until={{ images_keep_time }}"
+  args:
+    executable: /bin/bash
