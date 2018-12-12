@@ -4,5 +4,5 @@
   connection: local
   roles:
     - role: ansible-docker-cleanup
-      cleanup_enabled: true
+      app_docker_cleanup_enabled: true
       images_keep_time: '24h'

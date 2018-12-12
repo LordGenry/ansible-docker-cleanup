@@ -15,6 +15,7 @@ Role Variables
 
 You need to provide:
 
+* `app_docker_cleanup_enabled`: cleanup is disabled by default
 * `images_keep_time`: filter can be Unix timestamps, date formatted timestamps, or Go duration strings (e.g. `10,`, `1h30m`, `2018-01-02`,`2018-01-02T15:04:05`)
 
 Dependencies
@@ -26,6 +27,7 @@ Example Playbook
 ----------------
 
     - role: matic-insurance.ansible_docker_cleanup
+      app_docker_cleanup_enabled: true
       images_keep_time: '24h'
       tags: ['docker']
 
