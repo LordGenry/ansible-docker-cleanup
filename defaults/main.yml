@@ -1,2 +1,3 @@
 ---
-images_keep_time: '24h'
+images_keep_time: '48h'
+cleanup_enabled: false

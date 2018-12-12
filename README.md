@@ -1,6 +1,8 @@
 Role Name
 =========
 
+[![Build Status](https://travis-ci.org/matic-insurance/ansible-docker-cleanup.svg?branch=master)](https://travis-ci.org/matic-insurance/ansible-docker-cleanup)
+
 Remove docker images created before given timestamp.
 
 Requirements
@@ -23,7 +25,7 @@ Dependencies
 Example Playbook
 ----------------
 
-    - role: matic-insurance.ansible-docker-cleanup
+    - role: matic-insurance.ansible_docker_cleanup
       images_keep_time: '24h'
       tags: ['docker']
 

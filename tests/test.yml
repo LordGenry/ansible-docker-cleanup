@@ -2,4 +2,6 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - ansible-docker-cleanup
+    - role: ansible-docker-cleanup
+      cleanup_enabled: true
+      images_keep_time: '24h'
